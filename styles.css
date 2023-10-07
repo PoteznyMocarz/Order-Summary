@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pb-color: hsl(225, 100%, 94%);
+    --bp-color: hsl(245, 75%, 52%);
+    --vpb-color: hsl(225, 100%, 98%);
+    --db-color: hsl(224, 23%, 55%);
+    --darkb-color: hsl(223, 47%, 23%);
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pb-color);
+}
+
+main {
+    position: relative;
+    text-align: center;
+    max-height: 700px;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+main .header-img {
+    width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+h1 {
+    color: var(--darkb-color);
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.desc {
+    color: var(--db-color);
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.plan-sel {
+    text-align: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100%;
+    background-color: var(--vpb-color);
+    padding: 7px;
+    border-radius: 14px;
+    margin-top: 30px;
+}
+
+.plan-sel img {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.plan-sel h2 {
+    position: relative;
+    left: 23%;
+    font-size: 17px;
+    color: var(--darkb-color);
+    font-weight: 900;
+    top: 9px;
+    line-height: 37px;
+}
+
+.plan-sel p {
+    display: block;
+    position: relative;
+    left: 23%;
+    top: 7px;
+    color: var(--db-color);
+}
+
+.plan-sel span {
+    position: relative;
+    left: 80%;
+    top: -27px;
+    font-weight: 700;
+}
+
+button {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.btn-pay {
+    background-color: var(--bp-color);
+    border: none;
+    padding: 15px 120px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+
+.btn-cancel {
+    border: none;
+    background: none;
+    font-size: 17px;
+    color: var(--db-color);
+    font-weight: 700;
+}
+
+.plan-sel a:hover {
+    text-decoration: none;
+    color: rgb(139, 172, 255);
+}
+
+.btn-pay:hover {
+    background-color: #766CF1;
+}
+
+.btn-cancel:hover {
+    color: var(--darkb-color);
+}
+
+@media  (max-width: 390px) {
+    main {
+        margin: 20px;
+        max-width: 355px;
+}
+
+.plan-sel {
+    width: 85%;
+}
+
+.btn-pay {
+    white-space: nowrap;
+    padding: 15px 60px;
+}
+
+.plan-sel h2 {
+    left: 31%;
+    font-size: 16px;
+}
+
+.plan-sel p {
+    left: 31%;
+    top: 3px;
+}
+
+.plan-sel a {
+    font-size: 14px;
+}
+
+.plan-sel span {
+    left: 77%;
+}
+}
